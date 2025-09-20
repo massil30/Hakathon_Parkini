@@ -36,43 +36,106 @@ Sikada is an innovative smart parking solution designed to address the growing c
 
 Folder PATH listing
 
+# Flutter Project Structure
+
+```
 lib/
 ├── main.dart
 ├── test.dart
+│
 ├── config/
 │   ├── colors.dart
 │   ├── dependencies.dart
 │   ├── fonts.dart
 │   └── urls.dart
+│
 ├── features/
+│   ├── ai/
+│   │   ├── ai_recommendation.dart
+│   │   └── ai_view.dart
+│   │
 │   ├── auth/
 │   │   ├── authcontroller.dart
 │   │   ├── user_model.dart
 │   │   └── authpages/
+│   │       ├── auth_components.dart
+│   │       ├── forget_password.dart
 │   │       ├── login.dart
-│   │       └── signup.dart
+│   │       ├── reset_password.dart
+│   │       ├── signup.dart
+│   │       └── verification.dart
+│   │
+│   ├── details/
+│   │   ├── parking_details.dart
+│   │   └── reservation_details.dart
+│   │
+│   ├── legalize/
+│   │   ├── legalization_review.dart
+│   │   └── legalize.dart
+│   │
 │   ├── map/
-│   │   ├── map_view.dart
+│   │   ├── bottom_sheet.dart
+│   │   ├── locations.dart
 │   │   ├── map_service.dart
-│   │   └── locations.dart
+│   │   ├── map_view.dart
+│   │   └── parking_details.dart
+│   │
 │   ├── payment/
+│   │
+│   ├── report/
+│   │   ├── my_reports.dart
+│   │   ├── personal_form.dart
+│   │   ├── report_review.dart
+│   │   └── submit_report.dart
+│   │
 │   ├── reservation/
-│   │   └── my_reservations.dart
+│   │   ├── my_reservations.dart
+│   │   ├── parking.dart
+│   │   └── reserved.dart
+│   │
 │   └── sessions/
 │       ├── session_page.dart
-│       └── car/
-│           └── car.dart
+│       ├── session_vm.dart
+│       ├── car/
+│       │   ├── car.dart
+│       │   └── spot.dart
+│       └── first/
+│           ├── review_page.dart
+│           └── selection.dart
+│
 ├── pages/
+│   ├── introduction.dart
 │   ├── root_page.dart
 │   ├── splash_screen.dart
+│   │
 │   ├── home/
-│   │   └── home_page.dart
+│   │   ├── home_page.dart
+│   │   └── home_widget.dart
+│   │
 │   └── profile/
+│       ├── profile_widget.dart
 │       └── profile_view.dart
+│
 └── utils/
+    ├── app_bar.dart
     ├── components.dart
     ├── dialogs.dart
-    └── app_bar.dart
+    └── image_picker.dart
+```
+
+## Copy This Structure:
+
+You can copy the code block above and paste it directly into your:
+- **README.md** file
+- **GitHub repository description**
+- **Documentation files**
+- **Project wiki**
+
+The structure will display cleanly with proper:
+- ✅ Tree formatting
+- ✅ Clean indentation
+- ✅ Professional appearance
+- ✅ Easy to read hierarchy
 
 
 
