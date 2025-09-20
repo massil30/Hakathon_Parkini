@@ -6,6 +6,8 @@ A comprehensive Flutter-based smart parking application that revolutionizes urba
 
 Sikada is an innovative smart parking solution designed to address the growing challenges of urban parking. The application leverages modern technologies including GPS tracking, real-time data processing, and intuitive user interfaces to provide an efficient parking management system.
 
+![Parking Map Example](https://drive.google.com/drive/u/0/folders/1D2TV6Kx-YqVQOr2MwR77Lk4Ufg3LNFYc)
+
 ## ✨ Key Features
 
 ### 🎯 Core Functionality
