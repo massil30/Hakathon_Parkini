@@ -37,53 +37,40 @@ Sikada is an innovative smart parking solution designed to address the growing c
 Folder PATH listing
 
 lib/
-├── main.dart                          # App entry point
-├── test.dart                          # Test utilities
-│
-├── config/                           # App configuration
+├── main.dart
+├── test.dart
+├── config/
 │   ├── colors.dart
 │   ├── dependencies.dart
 │   ├── fonts.dart
 │   └── urls.dart
-│
-├── features/                         # Feature modules
-│   ├── ai/
-│   │   └── ai_view.dart
-│   │
-│   ├── auth/                        # Authentication
+├── features/
+│   ├── auth/
 │   │   ├── authcontroller.dart
 │   │   ├── user_model.dart
 │   │   └── authpages/
-│   │       ├── login.dart           # Key auth screens
-│   │       ├── signup.dart
-│   │       └── verification.dart
-│   │
-│   ├── map/                         # Map functionality
+│   │       ├── login.dart
+│   │       └── signup.dart
+│   ├── map/
 │   │   ├── map_view.dart
 │   │   ├── map_service.dart
 │   │   └── locations.dart
-│   │
-│   ├── payment/                     # Payment system
-│   ├── reservation/                 # Parking reservations
+│   ├── payment/
+│   ├── reservation/
 │   │   └── my_reservations.dart
-│   │
-│   └── sessions/                    # Parking sessions
+│   └── sessions/
 │       ├── session_page.dart
 │       └── car/
 │           └── car.dart
-│
-├── pages/                           # Main app pages
-│   ├── root_page.dart               # Navigation root
-│   ├── splash_screen.dart           # App splash
-│   │
-│   ├── home/                        # Home screen
+├── pages/
+│   ├── root_page.dart
+│   ├── splash_screen.dart
+│   ├── home/
 │   │   └── home_page.dart
-│   │
-│   └── profile/                     # User profile
+│   └── profile/
 │       └── profile_view.dart
-│
-└── utils/                           # Utilities
-    ├── components.dart              # Reusable components
+└── utils/
+    ├── components.dart
     ├── dialogs.dart
     └── app_bar.dart
 
