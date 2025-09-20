@@ -33,7 +33,7 @@ Sikada is an innovative smart parking solution designed to address the growing c
 
 ### 📁 lib/ Directory Structure
 
-`
+
 Folder PATH listing
 
 lib/
@@ -74,7 +74,7 @@ lib/
     ├── dialogs.dart
     └── app_bar.dart
 
-`
+
 
 ## 🛠️ Technology Stack
 
