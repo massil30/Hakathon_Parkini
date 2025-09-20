@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 cd "C:\Users\ABC\Desktop\Sikada" && echo "# Sikada - Smart Parking Solution
+=======
+<<<<<<< HEAD
+# sikada
+🅿️ Parkini - Smart Parking Solution
+>>>>>>> 161cfc915c73207b5c462376d6a018b3ee12ff4f
 
 A comprehensive Flutter-based smart parking application that revolutionizes urban parking management through real-time monitoring, intelligent space detection, and seamless user experience.
 
