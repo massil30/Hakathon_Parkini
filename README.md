@@ -36,91 +36,90 @@ Sikada is an innovative smart parking solution designed to address the growing c
 `
 Folder PATH listing
 
-|   main.dart
-|   structure.txt
-|   test.dart
-|   
-+---config
-|       colors.dart
-|       dependencies.dart
-|       fonts.dart
-|       urls.dart
-|       
-+---features
-|   +---Ai
-|   |       ai_recommendation.dart
-|   |       ai_view.dart
-|   |       
-|   +---auth
-|   |   |   authcontroller.dart
-|   |   |   user_model.dart
-|   |   |   
-|   |   \---authpages
-|   |           auth_components.dart
-|   |           ForgetPassword.dart
-|   |           login.dart
-|   |           ResetPassword.dart
-|   |           SignUp.dart
-|   |           verification.dart
-|   |           
-|   +---details
-|   |       parkingdetails.dart
-|   |       reservationdetails.dart
-|   |       
-|   +---legalize
-|   |       legalizationreview.dart
-|   |       legalize.dart
-|   |       
-|   +---map
-|   |       bottom_sheet.dart
-|   |       locations.dart
-|   |       map_service.dart
-|   |       map_view.dart
-|   |       parkingdetails.dart
-|   |       
-|   +---payment
-|   +---report
-|   |       myreports.dart
-|   |       personalform.dart
-|   |       reportreview.dart
-|   |       submitreport.dart
-|   |       
-|   +---reservation
-|   |       myReservations.dart
-|   |       parking.dart
-|   |       reserved.dart
-|   |       
-|   \---sessions
-|       |   sessionpage.dart
-|       |   session_vm.dart
-|       |   
-|       +---car
-|       |       car.dart
-|       |       spot.dart
-|       |       
-|       \---first
-|               reviewPage.dart
-|               selection.dart
-|               
-+---pages
-|   |   introduction.dart
-|   |   rootpage.dart
-|   |   splashscreen.dart
-|   |   
-|   +---Home
-|   |       homepage.dart
-|   |       homewidget.dart
-|   |       
-|   \---profile
-|           profilerwidget.dart
-|           profileview.dart
-|           
-\---utils
-        appbar.dart
-        components.dart
-        dialogs.dart
-        imagepicker.dart
-        
+lib/
+├── main.dart                           # Application entry point
+├── structure.txt                       # Project structure documentation
+├── test.dart                          # Test utilities and mock data
+│
+├── config/                            # Configuration files
+│   ├── colors.dart                    # App color scheme and theming
+│   ├── dependencies.dart              # Dependency injection setup
+│   ├── fonts.dart                     # Font configurations
+│   └── urls.dart                      # API endpoints and URLs
+│
+├── features/                          # Feature-based modules (Clean Architecture)
+│   ├── ai/                           # AI-powered features
+│   │   ├── ai_recommendation.dart     # AI parking recommendation service
+│   │   └── ai_view.dart              # AI recommendation UI
+│   │
+│   ├── auth/                         # Authentication system
+│   │   ├── authcontroller.dart       # Authentication logic controller
+│   │   ├── user_model.dart           # User data model
+│   │   └── authpages/                # Authentication screens
+│   │       ├── auth_components.dart  # Reusable auth components
+│   │       ├── forget_password.dart  # Password recovery screen
+│   │       ├── login.dart            # Login screen
+│   │       ├── reset_password.dart   # Password reset screen
+│   │       ├── signup.dart           # Registration screen
+│   │       └── verification.dart     # Email/Phone verification
+│   │
+│   ├── details/                      # Parking details management
+│   │   ├── parking_details.dart      # Parking spot details view
+│   │   └── reservation_details.dart  # Reservation details view
+│   │
+│   ├── legalize/                     # Legal compliance features
+│   │   ├── legalization_review.dart  # Legal review process
+│   │   └── legalize.dart             # Legalization main screen
+│   │
+│   ├── map/                          # Map functionality
+│   │   ├── bottom_sheet.dart         # Map bottom sheet component
+│   │   ├── locations.dart            # Location data models
+│   │   ├── map_service.dart          # Map service logic
+│   │   ├── map_view.dart             # Main map interface
+│   │   └── parking_details.dart      # Parking details on map
+│   │
+│   ├── payment/                      # Payment processing
+│   │   └── (payment implementation files)
+│   │
+│   ├── report/                       # Reporting system
+│   │   ├── my_reports.dart           # User's reports list
+│   │   ├── personal_form.dart        # Personal report form
+│   │   ├── report_review.dart        # Report review screen
+│   │   └── submit_report.dart        # Report submission
+│   │
+│   ├── reservation/                  # Parking reservations
+│   │   ├── my_reservations.dart      # User's reservations list
+│   │   ├── parking.dart              # Parking selection
+│   │   └── reserved.dart             # Reserved parking view
+│   │
+│   └── sessions/                     # Parking sessions
+│       ├── session_page.dart         # Session management page
+│       ├── session_vm.dart           # Session view model
+│       ├── car/                      # Car management
+│       │   ├── car.dart              # Car registration/management
+│       │   └── spot.dart             # Parking spot selection
+│       └── first/                    # First-time user flow
+│           ├── review_page.dart      # Review and confirmation
+│           └── selection.dart        # Initial selection screen
+│
+├── pages/                            # Main application pages
+│   ├── introduction.dart             # App introduction/onboarding
+│   ├── root_page.dart                # Root navigation page
+│   ├── splash_screen.dart            # App splash screen
+│   │
+│   ├── home/                         # Home screen components
+│   │   ├── home_page.dart            # Main home screen
+│   │   └── home_widget.dart          # Home screen widgets
+│   │
+│   └── profile/                      # User profile management
+│       ├── profile_widget.dart       # Profile widgets
+│       └── profile_view.dart         # Profile view screen
+│
+└── utils/                            # Utility functions and components
+    ├── app_bar.dart                  # Custom app bar components
+    ├── components.dart               # Reusable UI components
+    ├── dialogs.dart                  # Custom dialog components
+    └── image_picker.dart             # Image picker utilities
 
 `
 
