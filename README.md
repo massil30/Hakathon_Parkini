@@ -34,89 +34,94 @@ Sikada is an innovative smart parking solution designed to address the growing c
 ### 📁 lib/ Directory Structure
 
 `
-lib/
-├── main.dart                           # Application entry point
-├── test.dart                          # Test utilities and mock data
-│
-├── config/                            # Configuration files
-│   ├── colors.dart                    # App color scheme and theming
-│   ├── dependencies.dart              # Dependency injection setup
-│   ├── fonts.dart                     # Font configurations
-│   └── urls.dart                      # API endpoints and URLs
-│
-├── features/                          # Feature-based modules
-│   ├── Ai/                           # AI-powered features
-│   │   ├── ai_recommendation.dart    # AI parking recommendations
-│   │   └── ai_view.dart              # AI recommendation UI
-│   │
-│   ├── auth/                         # Authentication system
-│   │   ├── authcontroller.dart       # Authentication logic controller
-│   │   ├── user_model.dart           # User data model
-│   │   └── authpages/                # Authentication screens
-│   │       ├── auth_components.dart  # Reusable auth components
-│   │       ├── ForgetPassword.dart   # Password recovery screen
-│   │       ├── login.dart            # Login screen
-│   │       ├── ResetPassword.dart    # Password reset screen
-│   │       ├── SignUp.dart           # Registration screen
-│   │       └── verification.dart     # Email/Phone verification
-│   │
-│   ├── details/                      # Parking details management
-│   │   ├── parkingdetails.dart       # Parking spot details view
-│   │   └── reservationdetails.dart   # Reservation details view
-│   │
-│   ├── legalize/                     # Legal compliance features
-│   │   ├── legalizationreview.dart   # Legal review process
-│   │   └── legalize.dart             # Legalization main screen
-│   │
-│   ├── map/                          # Map functionality
-│   │   ├── bottom_sheet.dart         # Map bottom sheet component
-│   │   ├── locations.dart            # Location data models
-│   │   ├── map_service.dart          # Map service logic
-│   │   ├── map_view.dart             # Main map interface
-│   │   └── parkingdetails.dart       # Parking details on map
-│   │
-│   ├── payment/                      # Payment processing
-│   │   └── (payment related files)
-│   │
-│   ├── report/                       # Reporting system
-│   │   ├── myreports.dart            # User's reports list
-│   │   ├── personalform.dart         # Personal report form
-│   │   ├── reportreview.dart         # Report review screen
-│   │   └── submitreport.dart         # Report submission
-│   │
-│   ├── reservation/                  # Parking reservations
-│   │   ├── myReservations.dart       # User's reservations list
-│   │   ├── parking.dart              # Parking selection
-│   │   └── reserved.dart             # Reserved parking view
-│   │
-│   └── sessions/                     # Parking sessions
-│       ├── sessionpage.dart          # Session management page
-│       ├── session_vm.dart           # Session view model
-│       ├── car/                      # Car management
-│       │   ├── car.dart              # Car registration/management
-│       │   └── spot.dart             # Parking spot selection
-│       └── first/                    # First-time user flow
-│           ├── reviewPage.dart       # Review and confirmation
-│           └── selection.dart        # Initial selection screen
-│
-├── pages/                            # Main application pages
-│   ├── Home/                         # Home screen components
-│   │   ├── homepage.dart             # Main home screen
-│   │   └── homewidget.dart           # Home screen widgets
-│   │
-│   ├── profile/                      # User profile management
-│   │   ├── profilerwidget.dart       # Profile widgets
-│   │   └── profileview.dart          # Profile view screen
-│   │
-│   ├── introduction.dart             # App introduction/onboarding
-│   ├── rootpage.dart                 # Root navigation page
-│   └── splashscreen.dart             # App splash screen
-│
-└── utils/                            # Utility functions and components
-    ├── appbar.dart                   # Custom app bar components
-    ├── components.dart               # Reusable UI components
-    ├── dialogs.dart                  # Custom dialog components
-    └── imagepicker.dart              # Image picker utilities
+Folder PATH listing
+
+|   main.dart
+|   structure.txt
+|   test.dart
+|   
++---config
+|       colors.dart
+|       dependencies.dart
+|       fonts.dart
+|       urls.dart
+|       
++---features
+|   +---Ai
+|   |       ai_recommendation.dart
+|   |       ai_view.dart
+|   |       
+|   +---auth
+|   |   |   authcontroller.dart
+|   |   |   user_model.dart
+|   |   |   
+|   |   \---authpages
+|   |           auth_components.dart
+|   |           ForgetPassword.dart
+|   |           login.dart
+|   |           ResetPassword.dart
+|   |           SignUp.dart
+|   |           verification.dart
+|   |           
+|   +---details
+|   |       parkingdetails.dart
+|   |       reservationdetails.dart
+|   |       
+|   +---legalize
+|   |       legalizationreview.dart
+|   |       legalize.dart
+|   |       
+|   +---map
+|   |       bottom_sheet.dart
+|   |       locations.dart
+|   |       map_service.dart
+|   |       map_view.dart
+|   |       parkingdetails.dart
+|   |       
+|   +---payment
+|   +---report
+|   |       myreports.dart
+|   |       personalform.dart
+|   |       reportreview.dart
+|   |       submitreport.dart
+|   |       
+|   +---reservation
+|   |       myReservations.dart
+|   |       parking.dart
+|   |       reserved.dart
+|   |       
+|   \---sessions
+|       |   sessionpage.dart
+|       |   session_vm.dart
+|       |   
+|       +---car
+|       |       car.dart
+|       |       spot.dart
+|       |       
+|       \---first
+|               reviewPage.dart
+|               selection.dart
+|               
++---pages
+|   |   introduction.dart
+|   |   rootpage.dart
+|   |   splashscreen.dart
+|   |   
+|   +---Home
+|   |       homepage.dart
+|   |       homewidget.dart
+|   |       
+|   \---profile
+|           profilerwidget.dart
+|           profileview.dart
+|           
+\---utils
+        appbar.dart
+        components.dart
+        dialogs.dart
+        imagepicker.dart
+        
+
 `
 
 ## 🛠️ Technology Stack
@@ -196,9 +201,7 @@ lib/
 - Location permissions required
 - Background location updates
 
-#### Web
-- Modern browser support
-- HTTPS required for location services
+
 
 ## 📱 Features Breakdown
 
@@ -238,99 +241,3 @@ lib/
 - Parking availability updates
 - System notifications
 
-## 🔧 Configuration
-
-### Environment Variables
-Create a .env file in the root directory:
-`
-API_BASE_URL=https://your-api-endpoint.com
-MAP_API_KEY=your_map_api_key
-GOOGLE_MAPS_API_KEY=your_google_maps_key
-`
-
-### API Integration
-The app integrates with backend services for:
-- User authentication
-- Parking data management
-- Real-time updates
-- Payment processing
-
-## 🧪 Testing
-
-Run tests using:
-`ash
-# Unit tests
-flutter test
-
-# Integration tests
-flutter test integration_test/
-
-# Coverage report
-flutter test --coverage
-`
-
-## 📦 Building for Production
-
-### Android
-`ash
-flutter build apk --release
-flutter build appbundle --release
-`
-
-### iOS
-`ash
-flutter build ios --release
-`
-
-### Web
-`ash
-flutter build web --release
-`
-
-### Desktop
-`ash
-flutter build windows --release
-flutter build macos --release
-flutter build linux --release
-`
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 👥 Team
-
-- **Project Lead**: [Your Name]
-- **Backend Developer**: [Team Member]
-- **UI/UX Designer**: [Team Member]
-- **Mobile Developer**: [Team Member]
-
-## 📞 Support
-
-For support and questions:
-- Email: support@sikada.com
-- Documentation: [Link to detailed docs]
-- Issues: [GitHub Issues Link]
-
-## 🔮 Future Roadmap
-
-- [ ] AI-powered parking prediction
-- [ ] Electric vehicle charging integration
-- [ ] Car wash booking
-- [ ] Valet parking services
-- [ ] Multi-language support
-- [ ] Advanced analytics dashboard
-- [ ] IoT sensor integration
-- [ ] Blockchain-based payments
-
----
-
-**Sikada** - Revolutionizing urban parking, one space at a time. 🚗✨
